@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  /* background-color: rgb(11, 95, 95); */
+  background-color: black;
+  flex-direction: column;
+}
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: black;
+  border-radius: 12px;
+  border: 2px solid white;
+
+}
+.row{
+  display: flex;
+  flex-direction: column;
+}
+.box{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+ margin: 4px;
+ font-size: 24px;
+ font-weight: bold;
+ cursor: pointer;
+ border-radius: 10px;
+}
+.x-box{
+  color: green;
+  background-color: rgba(0, 128, 0, 0.295);
+}
+.o-box{
+  color: blue;
+  background-color: rgba(0, 0, 255, 0.295);
+}
+.WinsText{
+  color: rgb(172, 172, 19);
+}
+.Start{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ button {
+  outline: none;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    width: 80px;
+    height: 31px;
+    border-radius: 7px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.Start ul{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 0px;
+ margin-top: 0;
+}
+.Start h1{
   color: white;
+  margin-bottom: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.Start ul li,.TurnText{
+  list-style: none;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  margin: 10px;
+  padding:3px 10px;
+  border-radius: 9px;
+ text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Start ul :first-child,.X-turn{
+  color: green;
+}
+.Start ul :last-child ,.O-turn{
+  color: blue;
+}
+input{
+  outline: none;
+  padding: 5px 10px;
+width: 100%;
+font-weight: bold;
+}
+.label{
+  color: white;
+  margin-bottom: 4px;
+  align-self: self-start;
+  font-weight: bold;
+}
+.symbols-X{
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+.symbols-O{
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
 }
